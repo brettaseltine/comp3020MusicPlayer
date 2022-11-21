@@ -1,0 +1,44 @@
+/* -------------------------------------------------------- */
+/* SMALL PLAYER STYLE */
+.smallPlayer {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: lightgray;
+    overflow-x: hidden;
+  }
+  
+  .smallPlayer .expandbtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .fullscreenPlayer {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    text-align: center;
+    background-color: rgb(210, 90, 120);
+    display: none;
+  }
+  
+  .fullscreenPlayer .closefspbutton {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 40px;
+    text-decoration: none;
+    display: none;
+  
+  }
