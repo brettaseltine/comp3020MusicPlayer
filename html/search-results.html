@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/13a98fad65.js" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/search-results.js"></script>
+    <title>Document</title>
+</head>
+<body onload=setup()>
+    <!-- Side bar -->
+    <div id="sidebar" class="sidebar">
+        <a href="#" id="closebtn" class="closebtn">×</a>
+        <a href="#" id="openbtn" class="openbtn">☰</a>
+        <a href="../index.html" id="home"><i class="fa fa-home"></i> Home</a> 
+        <a href="./html/library.html" id="library"><i class="fa fa-book"></i> Library</a>
+        <a href="./html/history.html" id="history"><i class="fa fa-clock"></i> History</a>
+        <a href="./html/settings.html" id="settings"><i class="fa fa-gear"></i> Settings</a>
+    </div>
+    
+    <!-- Main screen -->
+    <div id="main">
+
+        <!-- Search Bar -->
+        <div class="searchBar">
+            <div class="searchIcon"><i class="fa fa-search searchIcon"></i></div>
+            <form method="get" action="search-results.html">
+                <input type ="search" name="search-query" placeholder ="Search...">
+            </form>
+        </div>
+
+        <div id="searchResults" >
+            <h2>Search Results: <script>showResults()</script></h2>
+
+        </div>
+        
+    </div>
+
+    <!-- Bottom Player -->
+    <div id="smallPlayer" class="smallPlayer">
+        <p>smallplayer</p>
+        <a href="#" id="spExpandbtn" class="expandbtn">Full Screen Player</a>
+    </div>
+
+    <!-- Fullscreen Player -->
+    <div id="fullscreenPlayer" class="fullscreenPlayer">
+        <p>THIS IS FULLSCREEN PLAYER</p>
+        <a href="#" id="closefspbutton" class="closefspbutton">×</a>
+    </div>
+
+</body>
+</html>
