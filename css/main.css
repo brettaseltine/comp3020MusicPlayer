@@ -1,0 +1,12 @@
+/* -------------------------------------------------------- */
+/* PAGE STYLE */
+.page {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 250px;
+    display: none
+  }
+  /* Start displaying home page */
+  #homePage {
+    display: block;
+  }
