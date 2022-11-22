@@ -1,51 +1,36 @@
-<!-- ALL EVENT LISTENS MUST BE ADDED IN THE JS, NOT THIS HTML FILE -->
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="../css/style.css">
-        <script src="https://kit.fontawesome.com/13a98fad65.js" crossorigin="anonymous"></script>
-        <script src="../js/script.js"></script>
+        <link rel="stylesheet" href="../css/library.css">
+        <script src="../js/library.js"></script>
         <title>iMusic</title>
     </head>
-    <body onload=setup();showLibraryPage()>
-        <!-- Side bar -->
-        <div id="sidebar" class="sidebar">
-            <a href="#" id="closebtn" class="closebtn">×</a>
-            <a href="#" id="openbtn" class="openbtn">☰</a>
-            <a href="../index.html" id="home"><i class="fa fa-home"></i> Home</a> 
-            <a href="./html/library.html" id="library"><i class="fa fa-book"></i> Library</a>
-            <a href="./html/history.html" id="history"><i class="fa fa-clock"></i> History</a>
-            <a href="./html/settings.html" id="settings"><i class="fa fa-gear"></i> Settings</a>
-        </div>
-        
-        <!-- Main screen -->
-        <div id="main">
 
-            <!-- Search Bar -->
-            <div class="searchBar">
-                <div class="searchIcon"><i class="fa fa-search searchIcon"></i></div>
-                <form method="get" action="search-results.html">
-                    <input type ="search" name="search-query" placeholder ="Search...">
-                </form>
-            </div>
+    <body>
+        <input type="text" id="libSearchBar" onkeyup="libSearchFunction()" placeholder="Search for artist, albumn, song..">
 
-            <!-- Library Page -->
-            <div id="libraryPage" class="page">
-                <p>THIS IS THE LIBRARY PAGE</p>
-            </div>
-        </div>
-
-        <!-- Bottom Player -->
-        <div id="smallPlayer" class="smallPlayer">
-            <p>smallplayer</p>
-            <a href="#" id="spExpandbtn" class="expandbtn">Full Screen Player</a>
-        </div>
-
-        <!-- Fullscreen Player -->
-        <div id="fullscreenPlayer" class="fullscreenPlayer">
-            <p>THIS IS FULLSCREEN PLAYER</p>
-            <a href="#" id="closefspbutton" class="closefspbutton">×</a>
-        </div>
+        <table id="libTable">
+        <tr class="header">
+            <th>Title</th>
+            <th>Artist</th>
+        </tr>
+        <tr>
+            <td>Song1</td>
+            <td>Artist1</td>
+        </tr>
+        <tr>
+            <td>Song2</td>
+            <td>Artist2</td>
+        </tr>
+        <tr>
+            <td>Song3</td>
+            <td>Artist3</td>
+        </tr>
+        <tr>
+            <td>Song4</td>
+            <td>Artist4</td>
+        </tr>
+        </table>
 
     </body>
 </html>

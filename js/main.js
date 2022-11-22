@@ -9,17 +9,18 @@ function setup() {
     document.getElementById("settings").addEventListener("click", showSettingsPage);
     document.getElementById("spExpandbtn").addEventListener("click", showFullscreenPlayer)
     document.getElementById("closefspbutton").addEventListener("click", closeFullscreenPlayer);
+    
+    runSidebar();
+}
+
+function runSidebar() {
     var isSideBarOpen = (localStorage.getItem("sidebarOpen") === 'true');
-    console.log(isSideBarOpen);
     if(isSideBarOpen){
-        console.log("Sidebar is set to on, opening the sidebar");
         openSidebar();
     }
     else{
-        console.log("Sidebar is set to off, closing the sidebar");
         closeSidebar();
     }
-    console.log(sidebarOpen);
 }
 
 //-----------------------------------------------------------------

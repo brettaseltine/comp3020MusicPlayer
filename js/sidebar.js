@@ -11,7 +11,6 @@ function openSidebar() {
     document.getElementById("openbtn").style.display = "none";   // hide open button
     showText();
     localStorage.setItem("sidebarOpen", true);
-    console.log("Set sidebar to true");
 }
 
 function closeSidebar() {
@@ -24,7 +23,6 @@ function closeSidebar() {
     document.getElementById("openbtn").style.display = "block"; // show open button
     hideText();
     localStorage.setItem("sidebarOpen", false);
-    console.log("Set sidebar to false");
 
 }
 function showText() {
