@@ -1,11 +1,98 @@
-<!-- ALL EVENT LISTENS MUST BE ADDED IN THE JS, NOT THIS HTML FILE -->
 <!DOCTYPE html>
-<html>
-    <head>
-        
-    </head>
-    <body>
-        
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/settings.css">
+    <link rel="stylesheet" href="../css/search-results.css">
+    <link rel="stylesheet" href="../css/smallMusicPlayer.css">
+    <script src="https://kit.fontawesome.com/13a98fad65.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/sidebar.js"></script>
+    
+    <script src="../js/search-results.js"></script>
+    <title>iMusic</title>
+</head>
+<body onload=setup()>
+    
 
-    </body>
+    <!--Settings-->
+    <div id="main">
+        <div class="container">
+
+            <h1><u>Settings</u></h1>
+    
+            <div class="profile">
+                <h2>Profile</h2>
+    
+                <br>
+                
+                <div class="name">
+                <span>Full Name : </span>
+                <input type="text" class="input" value="James Bond">
+                </div>
+    
+                <div class="dob">
+                <span>Birthday : </span>
+                <input type="date" class="input" value="2000-10-09">
+                </div>
+    
+                <div class="gen">
+                <span>Gender : </span>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                </div>
+    
+                <div class="eml">
+                <span>Email : </span>
+                <input type="email" class="input" value="JamesBond007@gmail.com">
+                </div>
+            </div>
+    
+            <div class="general">
+                <h2>General</h2>
+    
+                <br>
+                
+                <div class="toggle">
+                    <span>Dark Mode </span>
+                    <input type="checkbox" class="t" id="togg-1">
+                    <label for="togg-1" class="lab"></label>
+                </div>
+    
+                <div class="drop-1">
+                <label for="drop-1">
+                    <span>Quality</span>
+                    <select name="quality" id="drop-1">
+                        <option value="high">High</option>
+                        <option value="mid">mid</option>
+                        <option value="low">low</option>
+                      </select>
+                </label>
+                </div>
+    
+            </div>
+    
+            <!-- <hr> -->
+    
+            <div class="about">
+                <h2>About Us</h2>
+    
+                <br>
+    
+                <p><b>version</b> : beta</p>
+                <p>welcome to our music player</p>
+            </div>
+            
+    
+        </div>
+    </div>
+
+
+    <script src="../js/settings.js"></script>
+
+</body>
 </html>
