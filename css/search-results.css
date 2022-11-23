@@ -1,0 +1,48 @@
+/* -------------------------------------------------------- */
+/* Header Spacing*/
+h2{
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+h3{
+    padding-left: 25px;
+}
+  
+  /* -------------------------------------------------------- */
+  /* Side-scrollable row */
+  
+  .horizontal-scroll-wrapper{
+    margin-bottom: 20px;
+    margin-left: 25px;
+    display: flex;
+    grid-auto-flow: column;
+    gap: 50px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+
+  .horizontal-scroll-wrapper::-webkit-scrollbar{
+    height: 10px;
+  }
+
+  .horizontal-scroll-wrapper::-webkit-scrollbar-thumb{
+    background-color: lightslategrey; 
+    height: 10px; 
+    border-radius: 10px; 
+    background-clip: content-box;;
+  }
+  .horizontal-scroll-wrapper::-webkit-scrollbar-thumb:hover{
+    background-color:  darkslategrey;
+  }
+
+  .horizontal-scroll-wrapper .squares{
+    align-items: center;
+    height: 15vh;
+    margin-bottom: 10px;
+  }
+
+  .horizontal-scroll-wrapper .squares:hover{
+        transform: translateY(-5px);
+        box-shadow: none;
+        opacity: 0.9;
+    }

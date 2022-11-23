@@ -5,6 +5,5 @@ const urlParams = new URLSearchParams(searchParameters);
 const param = urlParams.get('search-query');
 
 function showResults(){
-    console.log("Test");
     document.write(param);
 }
