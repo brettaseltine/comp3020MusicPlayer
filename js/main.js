@@ -11,6 +11,8 @@ function setup() {
     document.getElementById("closefspbutton").addEventListener("click", closeFullscreenPlayer);
     
     runSidebar();
+    resetIconColours();
+    document.getElementById("home").style.color = "white";
 }
 
 function runSidebar() {
@@ -30,18 +32,22 @@ function runSidebar() {
 function showHomePage() {
     clearPages();
     document.getElementById("homePage").style.display = "block";
+    document.getElementById("home").style.color = "white";
 }
 function showLibraryPage() {
     clearPages();
     document.getElementById("libraryPage").style.display = "block";
+    document.getElementById("library").style.color = "white";
 }
 function showHistoryPage() {
     clearPages();
     document.getElementById("historyPage").style.display = "block";
+    document.getElementById("history").style.color = "white";
 }
 function showSettingsPage() {
     clearPages();
     document.getElementById("settingsPage").style.display = "block";
+    document.getElementById("settings").style.color = "white";
 }
 function showFullscreenPlayer() {
     clearPages();
@@ -54,8 +60,16 @@ function closeFullscreenPlayer() {
 }
 
 function clearPages() {
+    resetIconColours();
     pages = document.getElementsByClassName("page");
     for(let i = 0; i < pages.length; i++) {
         pages[i].style.display = "none";
     }
+}
+
+function resetIconColours() {
+    document.getElementById("home").style.color = "gray";
+    document.getElementById("library").style.color = "gray";
+    document.getElementById("history").style.color = "gray";
+    document.getElementById("settings").style.color = "gray";
 }
