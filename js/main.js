@@ -49,6 +49,10 @@ function showSettingsPage() {
     document.getElementById("settingsPage").style.display = "block";
     document.getElementById("settings").style.color = "white";
 }
+function showSearchResultsPage() {
+    clearPages();
+    document.getElementById("searchResultsPage").style.display = "block";
+}
 function showFullscreenPlayer() {
     clearPages();
     document.getElementById("fullscreenPlayer").style.display = "block";

@@ -1,9 +1,5 @@
-const searchParameters = window.location.search;
-
-const urlParams = new URLSearchParams(searchParameters);
-
-const param = urlParams.get('search-query');
+const searchParam = document.getElementById("searchQuery");
 
 function showResults(){
-    document.write(param);
+    document.write(searchParam);
 }
