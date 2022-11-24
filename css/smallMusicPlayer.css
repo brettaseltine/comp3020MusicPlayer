@@ -8,17 +8,25 @@
     bottom: 0;
     left: 0;
     text-align: center;
-    background-color: lightgray;
+    background-color: white;
+    border: 3px solid black;
     overflow-x: hidden;
   }
   
   .smallPlayer .expandbtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 1px;
     font-size: 20px;
+    padding: 10px;
+     height:100%;
+    color: black; 
+    background-color: lightgrey;
     text-decoration: none;
     display: block;
+  }
+  .smallPlayer .expandbtn:hover {
+    background-color: gold;
   }
   
   .fullscreenPlayer {

@@ -11,23 +11,34 @@ html{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+   color: black;
+   background-color:rgb(254,254,254);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  border: 3px solid black;
 }
 
 .sidebar a {
   padding: 20px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
-  display: block;
+   display: block;
+   border-bottom:2px solid grey;
   transition: 0.5s;
+}
+#closebtn{
+  border:none;
+} 
+
+#home{
+  margin-top:50px;
 }
 
 .sidebar a:hover {
   color: gray;
+  background-color:gold;
+  text-decoration:none;
 }
 
 .sidebar .openbtn {

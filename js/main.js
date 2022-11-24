@@ -12,7 +12,7 @@ function setup() {
     
     runSidebar();
     resetIconColours();
-    document.getElementById("home").style.color = "white";
+    document.getElementById("home").style.color = "red";
 }
 
 function runSidebar() {
@@ -32,22 +32,22 @@ function runSidebar() {
 function showHomePage() {
     clearPages();
     document.getElementById("homePage").style.display = "block";
-    document.getElementById("home").style.color = "white";
+    document.getElementById("home").style.color = "red";
 }
 function showLibraryPage() {
     clearPages();
     document.getElementById("libraryPage").style.display = "block";
-    document.getElementById("library").style.color = "white";
+    document.getElementById("library").style.color = "red";
 }
 function showHistoryPage() {
     clearPages();
     document.getElementById("historyPage").style.display = "block";
-    document.getElementById("history").style.color = "white";
+    document.getElementById("history").style.color = "red";
 }
 function showSettingsPage() {
     clearPages();
     document.getElementById("settingsPage").style.display = "block";
-    document.getElementById("settings").style.color = "white";
+    document.getElementById("settings").style.color = "red";
 }
 function showSearchResultsPage() {
     clearPages();
@@ -72,8 +72,8 @@ function clearPages() {
 }
 
 function resetIconColours() {
-    document.getElementById("home").style.color = "gray";
-    document.getElementById("library").style.color = "gray";
-    document.getElementById("history").style.color = "gray";
-    document.getElementById("settings").style.color = "gray";
+    document.getElementById("home").style.color = "black";
+    document.getElementById("library").style.color = "black";
+    document.getElementById("history").style.color = "black";
+    document.getElementById("settings").style.color = "black";
 }
