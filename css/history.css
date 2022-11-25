@@ -33,7 +33,7 @@ body {
     height: 25px;
     text-align: left;
     background: white;
-    border-bottom: 2px solid rgb(185, 238, 255);
+    border-bottom: 2px red;
 }
 
 .fixed .sticky-date {
@@ -87,7 +87,7 @@ li {
 }
 
 .icon-element {
-    color: #007bff;
+    color: red;
 }
 
 footer {
