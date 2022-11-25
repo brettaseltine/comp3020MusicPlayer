@@ -41,8 +41,15 @@ function closeSidebar() {
 
 }
 function showText() {
+    document.getElementById("home").innerHTML = `<i class="fa fa-home"></i> Home`;
+    document.getElementById("library").innerHTML = `<i class="fa fa-book"></i> Library`;
+    document.getElementById("history").innerHTML = `<i class="fa fa-clock"></i> History`;
+    document.getElementById("settings").innerHTML = `<i class="fa fa-gear"></i> Settings`;
     
 }
 function hideText() {
-   
+    document.getElementById("home").innerHTML = `<i class="fa fa-home"></i>`;
+    document.getElementById("library").innerHTML = `<i class="fa fa-book"></i>`;
+    document.getElementById("history").innerHTML = `<i class="fa fa-clock"></i>`;
+    document.getElementById("settings").innerHTML = `<i class="fa fa-gear"></i>`;
 }
