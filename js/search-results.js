@@ -5,5 +5,5 @@ function showResults(){
 }
 
 function initializeHandlers(){
-    songs = document.getElementById(son)
+    songs = document.getElementById("son")
 }
