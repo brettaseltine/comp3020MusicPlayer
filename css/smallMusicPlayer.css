@@ -55,6 +55,7 @@
     position: absolute;
     text-align: center;
     font-size: 200%;
+    color: red;
   }
   #pausebtn {
     display: none;

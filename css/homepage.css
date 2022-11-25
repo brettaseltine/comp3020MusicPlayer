@@ -1,11 +1,17 @@
 
 
 .carousel-inner img {
-    width: 100%;
-   height: 70vh;
+  position: absolute;
+   left: 10%;
+   width: 70%;
+   height: 70%;
    /* border-radius: 5%; */
 
   }
+.carousel-inner {
+  width: 70%;
+  height: 50%;
+}
    
 #contain-page{
   /* margin-left: 30px; */
@@ -23,6 +29,10 @@
     font-family: Arial;
 
   }
+  p {
+    text-align: center;
+    font-family: 'Apple Chancery', cursive
+  }
   
   .header {
     text-align: center;
@@ -30,25 +40,21 @@
   }
   
   .row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
+    position: relative;
+    left: 10%;
     padding: 0 4px;
-     width: 150%;
+    width: 100%;
   }
   
   /* Create four equal columns that sits next to each other */
   .column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
     max-width: 25%;
     padding: 0 4px;
   } 
   .column img {
      vertical-align: middle;
-     width:400px;
-     height: 400px;
+     width:300px;
+     height: 300px;
      margin: 50px 0px;
  
    }
@@ -56,40 +62,18 @@
    transform: scale(1.1);
    transition: all 0.8s ease-in-out 0s;
    }
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
- 
-#alb{
-  font-family: 'Chomsky', sans-serif; 
-
-}
 
 .headings{
-  font-size: 150px;
+  font-size: 100px;
   text-align:center;
   margin-top:150px;
+  font-family: 'Chomsky', sans-serif; 
 }
 
 .lyrics{
   font-size: 50px;
   text-align:center;
   margin-top:150px;
-  
 }
 
 
@@ -97,7 +81,6 @@
   margin:300px 0px;
   font-size: 200px;
   text-align:center;
-  
   
 }
 
@@ -109,7 +92,6 @@
 }
 
 #billboard{
-
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -122,11 +104,6 @@
   margin-right: auto;
   width: 50%;
 }
- 
-
-
-
-
  
 #bilTable {
   border-collapse: collapse; /* Collapse borders */
@@ -148,17 +125,10 @@
 
 #bilTable tr.header {
   background-color: black;
-  color: yellow;
+  color: red;
 }
 
 /* Hover effect */
-#bilTable tr:hover {
-  background-color: gold;
+#bilTable tr:not(:first-child):hover {
+  background-color: lightgray;
 }
-
-.header th:hover{
-  background-color: red;
-}
-
-
-

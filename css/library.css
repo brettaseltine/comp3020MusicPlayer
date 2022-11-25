@@ -25,10 +25,10 @@
   
   #libTable tr.header {
     background-color: black;
-    color: yellow;
+    color: red;
   }
 
   /* Hover effect */
   #libTable tr:hover {
-    background-color: grey;
+    background-color: lightgray;
   }
