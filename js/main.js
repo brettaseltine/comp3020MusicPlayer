@@ -1,4 +1,6 @@
 let sidebarOpen = localStorage.getItem("sidebarOpen");
+let currentTrack = document.createElement('audio');
+
 function setup() {
     // add event listeners here
     document.getElementById("closebtn").addEventListener("click", closeSidebar);
@@ -15,6 +17,8 @@ function setup() {
     runSidebar();
     resetIconColours();
     document.getElementById("home").style.color = "red";
+
+    loadTrack();
 }
 
 function runSidebar() {
@@ -85,9 +89,16 @@ function resetIconColours() {
 function playAction() {
     document.getElementById("playbtn").style.display = "none";
     document.getElementById("pausebtn").style.display = "inline"
+    currentTrack.play();
 }
 
 function pauseAction() {
     document.getElementById("pausebtn").style.display = "none";
     document.getElementById("playbtn").style.display = "inline";
+    currentTrack.pause();
+}
+
+function loadTrack(){
+    currentTrack.src = "./music/The Beatles - Hey Jude.mp3";
+    currentTrack.load();
 }
