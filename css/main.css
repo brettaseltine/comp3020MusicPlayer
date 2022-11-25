@@ -2,8 +2,7 @@
 /* PAGE STYLE */
  
 .page {
-     transition: margin-left .5s;
-    padding: 16px;
+    transition: margin-left .5s;
     margin-left: 250px;
     display: none;
     width: 100%;
