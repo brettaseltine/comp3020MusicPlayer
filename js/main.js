@@ -54,6 +54,7 @@ function showSearchResultsPage() {
     document.getElementById("searchResultsPage").style.display = "block";
 }
 function showFullscreenPlayer() {
+    clearPages();
     document.getElementById("fullscreenPlayer").style.display = "block";
     document.getElementById("closefspbutton").style.display = "block";
 }
@@ -76,5 +77,3 @@ function resetIconColours() {
     document.getElementById("history").style.color = "black";
     document.getElementById("settings").style.color = "black";
 }
-
-
