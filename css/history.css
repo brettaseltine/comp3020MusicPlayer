@@ -66,7 +66,7 @@ header {
 .icon-list {
     display: inline-block;
     list-style: none;
-    text-align: center;
+    text-align: right;
     width: 1000px;
 }
 
