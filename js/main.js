@@ -9,6 +9,8 @@ function setup() {
     document.getElementById("settings").addEventListener("click", showSettingsPage);
     document.getElementById("spExpandbtn").addEventListener("click", showFullscreenPlayer)
     document.getElementById("closefspbutton").addEventListener("click", closeFullscreenPlayer);
+    document.getElementById("playbtn").addEventListener("click", playAction);
+    document.getElementById("pausebtn").addEventListener("click", pauseAction);
     
     runSidebar();
     resetIconColours();
@@ -76,4 +78,17 @@ function resetIconColours() {
     document.getElementById("library").style.color = "black";
     document.getElementById("history").style.color = "black";
     document.getElementById("settings").style.color = "black";
+}
+
+//----------------------------------------
+// SMALL MUSIC PLAYER BUTTON FUNCS
+//----------------------------------------
+function playAction() {
+    document.getElementById("playbtn").style.display = "none";
+    document.getElementById("pausebtn").style.display = "inline"
+}
+
+function pauseAction() {
+    document.getElementById("pausebtn").style.display = "none";
+    document.getElementById("playbtn").style.display = "inline";
 }

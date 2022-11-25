@@ -50,3 +50,31 @@
     display: none;
   
   }
+
+  #playbtn, #pausebtn {
+    position: absolute;
+    text-align: center;
+    font-size: 200%;
+  }
+  #pausebtn {
+    display: none;
+  }
+
+  #songTitle, #songArtist {
+    position: absolute;
+    left: 10%;
+  }
+  #songTitle {
+    top: 1%;
+  }
+  #songArtist {
+    bottom: 1%;
+  }
+  .smallPlayer img {
+    position: absolute;
+    left:3%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 60px;
+    height: 60px;
+  }
