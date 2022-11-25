@@ -1,0 +1,98 @@
+* {
+    font-size: 100%;
+    font-family: Tahoma;
+}
+
+header {
+    position: static;
+    padding: 20px 20px 80px 20px;
+    text-align: left;
+    height: 20px;
+    font-size: 2em;
+}
+
+/* body {
+    padding: 0;
+    margin: 0;
+} */
+
+/* .history-content {
+    margin: 0 auto;
+    text-align: left;
+} */
+
+/* .date-container {
+} */
+
+.sticky-date {
+    font-weight: bold;
+    position: relative;
+    height: 25px;
+    text-align: left;
+    background: white;
+    border-bottom: 2px solid rgb(185, 238, 255);
+}
+
+.fixed .sticky-date {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.fixedBottom .sticky-date {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+}
+
+.detail-container {
+    padding: 10px 20px;
+    margin: 0;
+    text-align: left;
+    text-align: top;
+}
+
+.time-list {
+    display: inline-block;
+    list-style: none;
+    text-align: right;
+}
+
+.time-element {
+    margin: 10px 0;
+}
+
+.song-list {
+    display: inline-block;
+    list-style: none;
+    /* margin: 0;
+    text-align: left;
+    text-align: top;
+    background: #888; */
+}
+
+.song-element {
+    margin: 10px 0;
+}
+
+.icon-list {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    width: 1000px;
+    /* padding-left: 70%; */
+}
+
+.icon-element {
+    /* background-position: 100% .4em;
+    padding-right: .6em; */
+    margin: 10px 0;
+}
+
+footer {
+    height: 10px;
+    padding: 20px;
+    text-align: left;
+    /* background: rgba(0, 0, 0, 0.161); */
+}
