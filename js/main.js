@@ -1,5 +1,28 @@
 let sidebarOpen = localStorage.getItem("sidebarOpen");
 let currentTrack = document.createElement('audio');
+let trackList = [
+    {
+        title: "Hey Jude",
+        artist: "The Beatles",
+        image: "./Images/albumcovers/21.jpg",
+        path: "./music/The Beatles - Hey Jude.mp3"
+    },
+    {
+        title: "Black Skinhead",
+        artist: "Kanye West",
+        image: "./Images/albumcovers/15.jpg",
+        path: "./music/Kanye West - Black Skinhead.mp3"
+    },
+    {
+        title: "Antidote",
+        artist: "Travis Scott",
+        image: "./Images/albumcovers/ts.jpg",
+        path: "./music/Travis Scott - Antidote.mp3"
+    },
+];
+let currentIdx = 0;
+let playing = false;
+
 
 function setup() {
     // add event listeners here
@@ -13,12 +36,14 @@ function setup() {
     document.getElementById("closefspbutton").addEventListener("click", closeFullscreenPlayer);
     document.getElementById("playbtn").addEventListener("click", playAction);
     document.getElementById("pausebtn").addEventListener("click", pauseAction);
+    document.getElementById("nextbtn").addEventListener("click", nextTrack);
+    document.getElementById("prevbtn").addEventListener("click", prevTrack);
     
     runSidebar();
     resetIconColours();
     document.getElementById("home").style.color = "red";
 
-    loadTrack();
+    loadTrack(currentIdx);
 }
 
 function runSidebar() {
@@ -90,15 +115,45 @@ function playAction() {
     document.getElementById("playbtn").style.display = "none";
     document.getElementById("pausebtn").style.display = "inline"
     currentTrack.play();
+    playing = true;
 }
 
 function pauseAction() {
     document.getElementById("pausebtn").style.display = "none";
     document.getElementById("playbtn").style.display = "inline";
     currentTrack.pause();
+    playing = false;
 }
 
-function loadTrack(){
-    currentTrack.src = "./music/The Beatles - Hey Jude.mp3";
+function loadTrack(trackIdx){
+    currentTrack.src = trackList[trackIdx].path;
     currentTrack.load();
+    document.getElementById("songTitle").innerText = trackList[trackIdx].title;
+    document.getElementById("songArtist").innerText = trackList[trackIdx].artist;
+    document.getElementById("songImage").src = trackList[trackIdx].image;
+    if(playing){
+        currentTrack.play();
+    }
+}
+
+function nextTrack(){
+    if ((currentIdx + 1) > trackList.length - 1){
+        currentIdx = 0;
+    }
+    else{
+        currentIdx += 1;
+    }
+    loadTrack(currentIdx);
+}
+
+function prevTrack(){
+    // Can add some functionality here where you restart the current song if it has been playing for a while 
+    if ((currentIdx - 1) < 0)
+    {
+        currentIdx = trackList.length - 1;
+    }
+    else{
+        currentIdx -= 1;
+    }
+    loadTrack(currentIdx);
 }
