@@ -25,6 +25,7 @@ header {
 } */
 
 .sticky-date {
+    padding-left: 20px;
     font-weight: bold;
     position: relative;
     height: 25px;
@@ -34,6 +35,8 @@ header {
 }
 
 .fixed .sticky-date {
+    padding-left: 20px;
+    padding-top: 20px;
     position: fixed;
     right: 0;
     left: 0;
@@ -41,6 +44,7 @@ header {
 }
 
 .fixedBottom .sticky-date {
+    padding-left: 20px;
     position: absolute;
     top: auto;
     bottom: 0;
