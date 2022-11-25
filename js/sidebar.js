@@ -31,10 +31,10 @@ function closeSidebar() {
     document.getElementById("openbtn").style.display = "block"; // show open button
     document.getElementById("openbtn").style.border = "none";  
 
-    document.getElementById("home").style.fontSize = "15px";
-    document.getElementById("library").style.fontSize = "15px";
-    document.getElementById("history").style.fontSize = "15px";
-    document.getElementById("settings").style.fontSize = "15px";
+    // document.getElementById("home").style.fontSize = "15px";
+    // document.getElementById("library").style.fontSize = "15px";
+    // document.getElementById("history").style.fontSize = "15px";
+    // document.getElementById("settings").style.fontSize = "15px";
 
     hideText();
     localStorage.setItem("sidebarOpen", false);
