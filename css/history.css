@@ -33,7 +33,7 @@ body {
     height: 25px;
     text-align: left;
     background: white;
-    border-bottom: 2px red;
+    border-bottom: 2px solid rgb(255, 0, 0);
 }
 
 .fixed .sticky-date {
