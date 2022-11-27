@@ -11,16 +11,24 @@ header {
     font-size: 2.75em;
 }
 
-/* body {} */
+/* div {
+    padding: 0;
+    margin: 0;
+    outline: solid 1px;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+} */
 
 .history-main {
     box-sizing: border-box;
 }
 
-/* .date-container {} */
-
 .sticky-date {
     font-size: 1.25em;
+    padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 5px;
     font-weight: bold;
@@ -49,41 +57,33 @@ header {
     bottom: 0;
 }
 
-.detail-container {
-    margin: 0;
-    padding: 0px;
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.col {
+    padding-right: 5%;
+}
+
+
+.time {
+    flex: 0.60;
+    text-align: right;
     white-space: nowrap;
 }
 
-ul {
-    display: inline-block;
-    list-style: none;
-}
-
-li {
-    padding-bottom: 15px;
-}
-
-.time-list {
-    text-align: right;
-}
-
-/* .time-element {} */
-
-.song-list {
+.song {
+    flex: 6;
     text-align: left;
 }
 
-/* .song-element {} */
-
-.icon-list {
+.icon {
+    flex: 0.1;
     text-align: right;
-    margin-left: 70%;
+
 }
 
-.icon-element {
-    color: red;
-}
 
 footer {
     height: 10px;

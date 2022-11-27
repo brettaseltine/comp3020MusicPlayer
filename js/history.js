@@ -1,5 +1,5 @@
 var dateContainers = document.getElementsByClassName("date-container");
-var detailContainers = document.getElementsByClassName("detail-container");
+var detailContainers = document.getElementsByClassName("row");
 
 function sticky() {
     for (var i = 0; i < dateContainers.length; i++) {
