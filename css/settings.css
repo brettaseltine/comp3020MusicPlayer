@@ -2,6 +2,16 @@
     margin: 0; padding: 0;box-sizing: border-box;
   }
 
+:root{
+    --bg__color: #fff;
+    --text__color:black;
+}
+
+.dark{
+    --bg__color: black;
+    --text__color: #fff;
+}
+
 
   body{
     height:100vh;
@@ -19,7 +29,7 @@
     background-blend-mode: overlay, overlay, difference, difference, overlay, difference, normal;
   }
 .container{
-    background: rgb(255, 255, 255);
+    background: var(--bg__color);
     width: 540px;
     height: 600px;
     margin: 0 auto;
@@ -37,18 +47,19 @@
 h1{
     margin-top: 20px;
     text-align: center;
-    color: #4d5061;
+    color: var(--text__color);
 }
   
 h2{
     text-align: center;
     padding: 5px 0;
-    color: #4d5061;
+    color: var(--text__color);
 }
   
 span{
     font-weight: 700;
     padding: 20px;
+    color: var(--text__color);
 }
   
 .profile,.general{
@@ -62,7 +73,9 @@ span{
   
 .input{
     border: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--text__color);
+    background-color: var(--bg__color);
+    color: var(--text__color);
 }
   
   /* TOOGLE SWITCH */
@@ -70,7 +83,12 @@ span{
     display: flex;
     justify-content: start;
 }
-  
+
+.radio{
+    color: var(--text__color);
+    
+}
+
 .t{
     display: none;
 }
@@ -121,5 +139,6 @@ select{
   
 p{
     text-align: center;
+    color: var(--text__color);
 }
   
