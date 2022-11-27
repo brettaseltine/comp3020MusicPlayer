@@ -42,8 +42,13 @@
     
                 <div class="gen">
                 <span>Gender : </span>
-                <input type="radio" name="gender" value="male"> Male
-                <input type="radio" name="gender" value="female"> Female
+                <label class="radio">
+                    <input type="radio" name="gender" value="male"> Male
+                </label>
+                <label class="radio">
+                    <input type="radio" name="gender" value="female"> Female
+                </label>
+                
                 </div>
     
                 <div class="eml">
@@ -59,8 +64,10 @@
                 
                 <div class="toggle">
                     <span>Dark Mode </span>
-                    <input type="checkbox" class="t" id="togg-1">
+                    <label id="togg">
+                    <input type="checkbox" class="t" id="togg-1" onclick="changeMode()">
                     <label for="togg-1" class="lab"></label>
+                    </label>
                 </div>
     
                 <div class="drop-1">
@@ -93,6 +100,14 @@
 
 
     <script src="../js/settings.js"></script>
+    <script>
+
+        function changeMode(){
+            var element = document.body;
+            element.classList.toggle("dark");
+        }
+
+    </script>
 
 </body>
 </html>
