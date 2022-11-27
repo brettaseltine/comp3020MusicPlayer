@@ -1,6 +1,64 @@
 * {
     font-size: 100%;
     font-family: Tahoma;
+    margin: 0; padding: 0;box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    height:100vh;
+    margin: 0;
+    --x: calc(var(--posX, 0) * 1px);
+    --y: calc(var(--posY, 0) * 1px);
+  
+    
+    
+    background-image: 
+        linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
+        radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(020 175 125), rgb(000 010 255)), 
+        radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(179, 137, 225)), 
+        radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 20% - var(--y)), rgb(250 255 000), rgb(239, 112, 112)), 
+        radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 077 000), rgb(000 200 255)), 
+        radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(238, 255, 0), rgb(194, 4, 137)), 
+        linear-gradient(60deg, rgb(0, 255, 170), rgb(120 086 255));
+      background-blend-mode: overlay, overlay, difference, difference, overlay, difference, normal;
+  }
+
+.container{
+    background: rgb(255, 255, 255);
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    /* margin-top: 10%; */
+    position: relative;
+    background: rgba(231, 231, 231, 0.771);
+    border-radius: 15px;
+    overflow: auto;
+    scrollbar-width: none;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .container::-webkit-scrollbar{
+    padding-left: 1px;
+    width: .5em;
+  }
+
+  .container::-webkit-scrollbar-track{
+    margin-block: .5em;
+  }
+
+  .container::-webkit-scrollbar-thumb{
+    height: 2px;
+    background: rgb(94, 94, 94);
+    border-radius: 100vw;
+  }
+
+#main_header{
+    text-align: center;
+    color: #fff;
 }
 
 header {
@@ -82,7 +140,7 @@ li {
 }
 
 .icon-element {
-    color: red;
+    color: rgb(64, 0, 255);
 }
 
 footer {

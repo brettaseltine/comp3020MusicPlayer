@@ -1,9 +1,73 @@
+*{
+  margin: 0; padding: 0;box-sizing: border-box;
+}
+
+body{
+  height:100vh;
+  margin: 0;
+  --x: calc(var(--posX, 0) * 1px);
+  --y: calc(var(--posY, 0) * 1px);
+
   
+  
+  background-image: 
+      linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
+      radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(020 175 125), rgb(000 010 255)), 
+      radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(179, 137, 225)), 
+      radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 20% - var(--y)), rgb(250 255 000), rgb(239, 112, 112)), 
+      radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 077 000), rgb(000 200 255)), 
+      radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(238, 255, 0), rgb(194, 4, 137)), 
+      linear-gradient(60deg, rgb(0, 255, 170), rgb(120 086 255));
+    background-blend-mode: overlay, overlay, difference, difference, overlay, difference, normal;
+}
+
+.container{
+  background: rgba(231, 231, 231, 0.771);
+  width: 50%;
+  height: 60vh;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10%;
+  box-shadow: 2px 5px 20px rgba(0,0,0,.5);
+  border-radius: 25px;
+  overflow: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  margin: -5rem 0;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.table{
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  border: 2px solid ;
+  border-color: black;
+  border-radius: 5px;
+}
+
   #libSearchBar {
     width: 100%;                                  /* Full-width */
     font-size: 16px;                            
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
+    border-radius: 5px;
     margin-bottom: 12px;
   }
   

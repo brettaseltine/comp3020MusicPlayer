@@ -29,28 +29,44 @@
 
 /* -------------------------------------------------------- */
 /* Search Bar Style*/
+.search_container{
+  display: flex;
+  justify-content: center;
+}
+
 .search-box{
   margin: 10px;
   border-radius: 120px;
   outline-style: solid;
-  outline-color:black;
+  outline-color:white;
   outline-width: thin;
   display: flex;
   align-items: center;
   background-color: transparent;
   width: 500px;
-  height: 40px;
+  height: 40px; 
   vertical-align: middle;
   padding: 10px;
 }
 
-.search-box > input{
+.search-box i{
+  color: white;
+}
+
+/* .search-box > input */
+#searchQuery{
   flex: 1;
   height: 40px;
   border: none;
   outline: none;
   font-size: 16px;
   padding-left: 20px;
+  background: transparent;
+  color: white;
+}
+
+#searchQuery::placeholder{
+  color: white;
 }
 
 .search-box .form-icon{
