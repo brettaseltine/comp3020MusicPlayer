@@ -83,6 +83,11 @@
             <p id="songTitle"></p>
             <p id="songArtist"></p>
             <img id="songImage" alt="Cover">
+            <div class="volumeContainer">
+                <i class="fa fa-volume-up" onclick="muteAction()"></i>
+                <input type="range" min="1" max="100" 
+                value="99" class="volumeSilder" onchange="setVolume()">
+            </div>
         </div>
 
         <!-- Fullscreen Player -->

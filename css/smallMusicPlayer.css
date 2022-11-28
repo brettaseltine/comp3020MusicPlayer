@@ -56,7 +56,7 @@
     justify-content: center;
     text-align: center;
     width: 150px;
-    background-color: grey;
+    border: solid black;
   }
   #playbtn, #pausebtn {
     position: absolute;
@@ -102,4 +102,13 @@
     margin-bottom: auto;
     width: 60px;
     height: 60px;
+  }
+
+  /* Volume Slider */
+  .volumeContainer {
+    display: flex;
+    position: absolute;
+    background-color: grey;
+    /* align-items: right; */
+    right:15%;
   }
