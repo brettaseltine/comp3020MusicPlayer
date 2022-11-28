@@ -3,91 +3,35 @@
     font-family: Tahoma;
 }
 
-header {
+h1 {
     position: static;
-    padding: 20px 20px 80px 20px;
+    padding-left: 20px;
     text-align: left;
-    height: 20px;
     font-size: 2.75em;
 }
 
-/* div {
-    padding: 0;
-    margin: 0;
-    outline: solid 1px;
-}
+#historyTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px;
+  }
+  
+  #historyTable th, #historyTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+  }
+  
+  #historyTable tr {
+    border-bottom: 1px solid #ddd; 
+  }
+  
+  #historyTable tr.header {
+    background-color: black;
+    color: red;
+  }
 
-p {
-    padding: 0;
-    margin: 0;
-} */
-
-.history-main {
-    box-sizing: border-box;
-}
-
-.sticky-date {
-    font-size: 1.25em;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    position: relative;
-    height: 25px;
-    text-align: left;
-    background: white;
-    border-bottom: 2px solid rgb(255, 0, 0);
-}
-
-.fixed .sticky-date {
-    padding-left: 20px;
-    padding-top: 30px;
-    padding-bottom: 5px;
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    z-index: 1
-}
-
-.fixedBottom .sticky-date {
-    padding-left: 20px;
-    position: absolute;
-    top: auto;
-    bottom: 0;
-}
-
-.row {
-    display: flex;
-    width: 100%;
-    border-bottom: 0.1px solid rgb(245, 245, 245);
-}
-
-.col {
-    padding-right: 5%;
-}
-
-
-.time {
-    flex: 0.60;
-    text-align: right;
-    white-space: nowrap;
-}
-
-.song {
-    flex: 6;
-    text-align: left;
-}
-
-.icon {
-    flex: 0.1;
-    text-align: right;
-
-}
-
-
-footer {
-    height: 10px;
-    padding: 20px;
-    text-align: left;
-}
+  /* Hover effect */
+  #historyTable tr:not(:first-child):hover {
+    background-color: lightgray;
+  }
