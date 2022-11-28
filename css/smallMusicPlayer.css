@@ -87,6 +87,7 @@
   #songTitle, #songArtist {
     position: absolute;
     left: 10%;
+    transform: translateX(40px);
   }
   #songTitle {
     top: 1%;
