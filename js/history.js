@@ -10,8 +10,8 @@ function sticky() {
         var stDt_element = document.getElementsByClassName("sticky-date")[0];
         var stDt_style = window.getComputedStyle(stDt_element);
         var stDt_padTop = parseInt(stDt_style.getPropertyValue("padding-top").split("px")[0])
-            + parseInt(stDt_style.getPropertyValue("padding-bottom").split("px")[0])
-            + (parseInt(stDt_style.getPropertyValue("height").split("px")[0])) * 0.75;
+            + parseInt(stDt_style.getPropertyValue("padding-bottom").split("px")[0]);
+            // + (parseInt(stDt_style.getPropertyValue("height").split("px")[0])) * 0.75;
 
         console.log("Windows Y offset: " + window.pageYOffset);
         console.log("Sticky Container #" + i + ": " + date_cntnr.offsetTop);

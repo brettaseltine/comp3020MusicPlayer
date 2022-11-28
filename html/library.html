@@ -1,32 +1,1820 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../css/library.css">
-        <script src="../js/library.js"></script>
-        <title>iMusic</title>
-    </head>
 
-    <body>
-        <input type="text" id="libSearchBar" onkeyup="libSearchFunction()" placeholder="Filter by Artist or Song Title...">
+<head>
+    <script src="https://kit.fontawesome.com/13a98fad65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/library.css">
+    <script src="/js/library.js"></script>
+    <title>Twitch</title>
+</head>
 
-        <table id="libTable">
-        <tr class="header">
-            <th>Title</th>
-            <th>Artist</th>
-        </tr>
-        <tr>
-            <td>Hey Jude</td>
-            <td>The Beatles</td>
-        </tr>
-        <tr>
-            <td>Black Skinhead</td>
-            <td>Kanye West</td>
-        </tr>
-        <tr>
-            <td>Antidote</td>
-            <td>Travis Scott</td>
-        </tr>
-        </table>
+<body>
+    <header class="heading">Library</header>
+    <div class="container ">
+        <div class="button" onclick="shiftLeft()">
+            < </div>
+                <div class="cards-wrapper">
+                    <ul class="cards__container">
+                        <li class="box"><img src="../Images/albumcovers/1.jpg"></li>
+                        <li class="box"><img src="../Images/albumcovers/2.jpg"></li>
+                        <li class="box"><img src="../Images/albumcovers/3.jpg"></li>
+                        <li class="box"><img src="../Images/albumcovers/4.jpg"></li>
+                        <li class="box"><img src="../Images/albumcovers/5.jpg"></li>
+                        <li class="box box--hide"><img src="../Images/albumcovers/6.jpg"></li>
+                        <li class="box box--hide"><img src="../Images/albumcovers/7.jpg"></li>
+                    </ul>
+                </div>
+                <div class="button" onclick="shiftRight()"> > </div>
+        </div>
+        <main class="history-main">
+            <div class="date-block">
+                <div class="date-container">
+                    <div class="sticky-date">
+                        Playlist 1
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+            </div>
+            <!---->
+            <!---->
+            <!---->
+            <!--date block-->
+            <div class="date-block">
+                <div class="date-container">
+                    <div class="sticky-date">
+                        Playlist 2
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+            </div>
+            <!--date block-->
+            <!---->
+            <!---->
+            <!---->
+            <div class="date-block">
+                <div class="date-container">
+                    <div class="sticky-date">
+                        Playlist 3
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+                <div class="row">
+                    <div class="time col">
+                        <p class="time-para"><a href=""><i class="fa-solid fa-trash"></i></a></p>
+                    </div>
+                    <!--time col-->
+                    <div class="song col">
+                        <p class="song-para">Song Name - Artist Name - Album Name</p>
+                    </div>
+                    <!--song col-->
+                    <div class="icon col">
+                        <p class="icon-para"><a href=""><i class="fa-solid fa-circle-play"></i></a></p>
+                    </div>
+                    <!--icon col-->
+                </div>
+                <!--row-->
+            </div>
+            <!--date block-->
+        </main>
+        <!--main-->
+        <footer></footer>
+</body>
 
-    </body>
 </html>
