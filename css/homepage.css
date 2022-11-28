@@ -1,82 +1,67 @@
 
-
 .carousel-inner img {
    width: 100%;
    height: 1000px;
    padding-left: 1vw;
-
-  }
-.carousel-inner {
-  /* width: 100%; */
-  /* height: 50%; */
-} 
-
-body::-webkit-scrollbar {
-  /* display: none; */
 }
+
+
 #contain-page{
-
   contain: content;
-  /* border:1px solid black; */
   
-  }
+}
 
-  .row .column:first-child{
-    /* margin-left: 100px; */
-  }
+* {
+  box-sizing: border-box;
+}
 
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial;
+body {
+  margin: 0;
+  font-family: Arial;
+}
 
-  }
-  p {
-    text-align: center;
-    font-size: 25px;
-    margin-top: -20px;
-    /* font-family: 'Apple Chancery', cursive */
-  }
-  
-  .header {
-    text-align: center;
-    padding: 32px;
-  }
-  .carousel-control-next-icon, .carousel-control-prev-icon {
+p {
+  text-align: center;
+  font-size: 25px;
+  margin-top: -20px;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
   filter: invert(1); 
 }
+
 .carousel-control-prev-icon {
   margin-left: 50px;
-
-
 }
-  .row {
-    position: relative;
-    left: 10%;
-    padding: 0 4px;
-    width: 100%;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    /* max-width: 25%; */
-    padding: 0 4px;
-    margin: 30px;
-  } 
-  .column img {
-     vertical-align: middle;
-     width:400px;
-     height: 400px;
-     margin: 50px 0px;
- 
-   }
-   .column img:hover{
-   transform: scale(1.25);
-   transition: all 0.5s ease 0s;
-   }
+
+.row {
+  position: relative;
+  left: 10%;
+  padding: 0 4px;
+  width: 100%;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  /* max-width: 25%; */
+  padding: 0 4px;
+  margin: 30px;
+} 
+.column img {
+    vertical-align: middle;
+    width:300px;
+    height: 300px;
+    margin: 50px 0px;
+}
+
+.column img:hover{
+  transform: scale(1.25);
+  transition: all 0.5s ease 0s;
+}
 
 .headings{
   font-size: 140px;
@@ -96,9 +81,7 @@ body::-webkit-scrollbar {
   margin:25% 0px;
   font-size: 200px;
   text-align:center;
-  
 }
-
 
 #imusic-heading:hover{
   color:red;
@@ -128,34 +111,3 @@ body::-webkit-scrollbar {
   margin-right: auto;
   padding: 50px;
 }
- 
-
-/* 
-
-#bilTable {
-  border-collapse: collapse;  
-  width: 100%;  
-  border: 1px solid black;
-  font-size: 18px;
-  margin-left: 50px;
-}
-
-#bilTable th, #bilTable td {
-  text-align: left; 
-  padding: 12px;  
-  border:1px solid black;
-}
-
-#bilTable tr {
-  border-bottom: 1px solid black; 
-}
-
-#bilTable tr.header {
-  background-color: black;
-  color: red;
-}
-
-
-#bilTable tr:not(:first-child):hover {
-  background-color: lightgray;
-} */
