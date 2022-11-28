@@ -28,13 +28,13 @@ footer{
   }
 
   .horizontal-scroll-wrapper::-webkit-scrollbar-thumb{
-    background-color: lightslategrey; 
+    background-color: #FFA0A0; 
     height: 10px; 
     border-radius: 10px; 
-    background-clip: content-box;;
+    background-clip: content-box;
   }
   .horizontal-scroll-wrapper::-webkit-scrollbar-thumb:hover{
-    background-color:  darkslategrey;
+    background-color: #FF5656;
   }
 
   .horizontal-scroll-wrapper .squares{
@@ -50,4 +50,69 @@ footer{
     }
   .horizontal-scroll-wrapper .squares:active{
     opacity: 0.5;
+  }
+
+  .formPopup {
+    display: none;
+    position: fixed;
+    bottom: 20%;
+    left: 20%;
+  }
+
+  #exitButton {
+    background-color: transparent;
+    border: none;
+    font-size: 150%;
+    text-align: right;
+  }
+  .formContainer {
+    /* background-color: white; */
+    border: 3px solid;
+    border-radius: 25px;
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-y: auto;
+  }
+  .formContainer::-webkit-scrollbar {
+    width: 8px;
+  }
+  .formContainer::-webkit-scrollbar-thumb {
+    background-color: #FFA0A0; 
+    width: 8px; 
+    border-radius: 10px; 
+    background-clip: content-box;
+  }
+  .formContainer::-webkit-scrollbar-thumb:hover{
+    background-color: #FF5656;
+  }
+  .formContainer::-webkit-scrollbar-track-piece:end {
+    margin-bottom: 20px;
+  }
+  .formContainer::-webkit-scrollbar-track-piece:start {
+    margin-top: 20px;
+  }
+  .songTableBtn {
+    color: red;
+    padding-right: 10px;
+  }
+  .songTableBtn:hover {
+    opacity: 0.5;
+  }
+  .songTableBtn:active {
+    opacity: 1;
+  }
+  .songTableTitle {
+    padding-right: 90px;
+  }
+  .selectedAlbumCover {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 30%;
+  }
+  #albumHeader {
+    text-align: center;
   }
