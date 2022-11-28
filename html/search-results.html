@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/13a98fad65.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
     <script src="../js/search-results.js"></script>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -72,7 +73,116 @@
             <img class="squares" src="../Images/albumcovers/36.jpg"></img>
         </div>
     </div>
-    
 </body>
+<div class="formPopup" id="albumForm">
+    <form class="formContainer">
+        <div align="right">
+            <button type="button" id="exitButton" onclick="closeAlbumPopup()">x</button>
+        </div>
+        <img class="selectedAlbumCover" src="../Images/albumcovers/25.jpg"></img>
+        <h1 id="albumHeader">Album Name</h1>
+        <table>
+            <th></th>
+            <th class = "songTableTitle">Song Title</th>
+            <th>Duration</th>
+            <hr>
+            <tr class>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td class = "songTableTitle">Song 1</td>
+                <td>1:00</td>
+            </tr>
+            <tr>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td>Song 2</td>
+                <td>1:00</td>
+            </tr>
+            <tr>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td>Song 3</td>
+                <td>1:00</td>
+            </tr>
+            <tr>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td>Song 4</td>
+                <td>1:00</td>
+            </tr>
+            <tr>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td>Song 5</td>
+                <td>1:00</td>
+            </tr>
+            <tr>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td>Song 6</td>
+                <td>1:00</td>
+            </tr>
+            <tr>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td>Song 7</td>
+                <td>1:00</td>
+            </tr>
+            <tr>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td>Song 8</td>
+                <td>1:00</td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div class="formPopup" id="playlistForm">
+    <form class="formContainer">
+        <div align="right">
+            <button type="button" id="exitButton" onclick="closePlaylistPopup()">x</button>
+        </div>
+        <img class="selectedAlbumCover" src="../Images/albumcovers/59.jpg"></img>
+        <h1 id="albumHeader">Playlist Name</h1>
+        <table>
+            <th></th>
+            <th class = "songTableTitle">Song Title</th>
+            <th>Duration</th>
+            <hr>
+            <tr class>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td class = "songTableTitle">Song 1</td>
+                <td>1:00</td>
+            </tr>
+            <tr>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td>Song 2</td>
+                <td>1:00</td>
+            </tr>
+            <tr>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td>Song 3</td>
+                <td>1:00</td>
+            </tr>
+            <tr>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td>Song 4</td>
+                <td>1:00</td>
+            </tr>
+            <tr>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td>Song 5</td>
+                <td>1:00</td>
+            </tr>
+            <tr>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td>Song 6</td>
+                <td>1:00</td>
+            </tr>
+            <tr>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td>Song 7</td>
+                <td>1:00</td>
+            </tr>
+            <tr>
+                <td class = "songTableBtn"><i class="fa-solid fa-circle-play"></i></td>
+                <td>Song 8</td>
+                <td>1:00</td>
+            </tr>
+        </table>
+    </form>
+</div>
 <footer></footer>
 </html>

@@ -40,7 +40,14 @@
     text-align: center;
     padding: 32px;
   }
-  
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+  filter: invert(1); 
+}
+.carousel-control-prev-icon {
+  margin-left: 50px;
+
+
+}
   .row {
     position: relative;
     left: 10%;
