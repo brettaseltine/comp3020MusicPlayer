@@ -12,7 +12,7 @@
 } 
 
 body::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
 }
 #contain-page{
 
