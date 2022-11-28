@@ -1,0 +1,68 @@
+/* -------------------------------------------------------- */
+/* PAGE STYLE */
+ 
+.page {
+    transition: margin-left .5s;
+    margin-left: 250px;
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  /* Start displaying home page */
+  #homePage {
+    display: block;
+  }
+
+.iframepage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  zoom: 0.83;
+  -moz-transform: scale(0.83);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.83);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.83);
+  -webkit-transform-origin: 0 0;
+}
+
+#fspiframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* -------------------------------------------------------- */
+/* Search Bar Style*/
+.search-box{
+  margin: 10px;
+  border-radius: 120px;
+  outline-style: solid;
+  outline-color:black;
+  outline-width: thin;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  width: 500px;
+  height: 40px;
+  vertical-align: middle;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-box > input{
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.search-box .form-icon{
+  position: absolute;
+}
