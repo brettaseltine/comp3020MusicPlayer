@@ -74,8 +74,8 @@ body::-webkit-scrollbar {
  
    }
    .column img:hover{
-   transform: scale(1.1);
-   transition: all 0.8s ease-in-out 0s;
+   transform: scale(1.25);
+   transition: all 0.5s ease 0s;
    }
 
 .headings{
@@ -102,7 +102,7 @@ body::-webkit-scrollbar {
 
 #imusic-heading:hover{
   color:red;
-  transform: scale(1.2);
+  transform: scale(1.25);
   transition: all 0.8s ease-in-out 0s;
 }
 
@@ -128,8 +128,7 @@ body::-webkit-scrollbar {
   margin-right: auto;
   padding: 50px;
 }
-
-
+ 
 
 /* 
 
