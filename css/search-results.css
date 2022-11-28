@@ -54,9 +54,11 @@ footer{
 
   .formPopup {
     display: none;
-    position: fixed;
-    bottom: 20%;
-    left: 20%;
+    position: absolute;
+    top:0;
+    left: 30%;
+    /* bottom: 20%;
+    left: 20%; */
   }
 
   #exitButton {
@@ -65,15 +67,20 @@ footer{
     font-size: 150%;
     text-align: right;
   }
+
+  #exitButton:hover {
+    opacity: 0.5;
+  }
+  /* Album/Playlist Popup Screen */
   .formContainer {
-    /* background-color: white; */
     border: 3px solid;
     border-radius: 25px;
     background-color: white;
     width: 400px;
-    height: 300px;
-    padding-left: 15px;
-    padding-right: 15px;
+    height: 400px;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
     overflow-y: auto;
   }
   .formContainer::-webkit-scrollbar {
@@ -94,6 +101,7 @@ footer{
   .formContainer::-webkit-scrollbar-track-piece:start {
     margin-top: 20px;
   }
+
   .songTableBtn {
     color: red;
     padding-right: 10px;
