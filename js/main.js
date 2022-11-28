@@ -32,6 +32,7 @@ function setup() {
     document.getElementById("library").addEventListener("click", showLibraryPage);
     document.getElementById("history").addEventListener("click", showHistoryPage);
     document.getElementById("settings").addEventListener("click", showSettingsPage);
+    document.getElementById("searchQuery").addEventListener("keypress", (event) => {showSearchResultsPage(event);});
     document.getElementById("spExpandbtn").addEventListener("click", showFullscreenPlayer)
     document.getElementById("closefspbutton").addEventListener("click", closeFullscreenPlayer);
     document.getElementById("playbtn").addEventListener("click", playAction);
@@ -80,9 +81,12 @@ function showSettingsPage() {
     document.getElementById("settingsPage").style.display = "block";
     document.getElementById("settings").style.color = "red";
 }
-function showSearchResultsPage() {
-    clearPages();
-    document.getElementById("searchResultsPage").style.display = "block";
+function showSearchResultsPage(e) {
+    console.log(e.key);
+    if(e.key === "Enter"){
+        clearPages();
+        document.getElementById("searchResultsPage").style.display = "block";
+    }
 }
 function showFullscreenPlayer() {
     document.getElementById("fullscreenPlayer").style.display = "block";
