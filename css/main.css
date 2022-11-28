@@ -29,6 +29,11 @@
 
 /* -------------------------------------------------------- */
 /* Search Bar Style*/
+.search{
+  display: flex;
+  justify-content: center;
+}
+
 .search-box{
   margin: 10px;
   border-radius: 120px;
@@ -38,7 +43,7 @@
   display: flex;
   align-items: center;
   background-color: transparent;
-  width: 500px;
+  width: 900px;
   height: 40px;
   vertical-align: middle;
   padding: 10px;
