@@ -5,18 +5,21 @@ let trackList = [
         title: "Hey Jude",
         artist: "The Beatles",
         image: "./Images/albumcovers/21.jpg",
+        imageDifPath: "../Images/albumcovers/21.jpg",
         path: "./music/The Beatles - Hey Jude.mp3"
     },
     {
         title: "Black Skinhead",
         artist: "Kanye West",
         image: "./Images/albumcovers/15.jpg",
+        imageDifPath: "../Images/albumcovers/15.jpg",
         path: "./music/Kanye West - Black Skinhead.mp3"
     },
     {
         title: "Antidote",
         artist: "Travis Scott",
         image: "./Images/albumcovers/ts.jpg",
+        imageDifPath: "../Images/albumcovers/ts.jpg",
         path: "./music/Travis Scott - Antidote.mp3"
     },
 ];
@@ -135,6 +138,8 @@ function loadTrack(trackIdx){
     document.getElementById("songTitle").innerText = trackList[trackIdx].title;
     document.getElementById("songArtist").innerText = trackList[trackIdx].artist;
     document.getElementById("songImage").src = trackList[trackIdx].image;
+    sendTrackToFSP(trackIdx);
+
     if(playing){
         currentTrack.play();
     }
@@ -160,4 +165,12 @@ function prevTrack(){
         currentIdx -= 1;
     }
     loadTrack(currentIdx);
+}
+
+function sendTrackToFSP(trackIdx) {
+    const msg = JSON.stringify({
+        "tracks": trackList,
+        "trackIdx": trackIdx
+    });
+    document.getElementById("fspiframe").contentWindow.postMessage(msg, '*');
 }
