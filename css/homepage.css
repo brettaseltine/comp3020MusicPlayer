@@ -347,7 +347,7 @@ img {
   margin-bottom: 20px;
 }
 
-.top-top{
+.top-top {
   text-align: center;
   font-weight: bolder;
 }
@@ -460,7 +460,15 @@ h3 {
   padding: 40px;
 }
 
+.lyrics:hover {
+  transform: scale(1.25);
+  transition: all 0.5s ease 0s;
+}
 
+img:hover {
+  transform: scale(1.25);
+  transition: all 0.5s ease 0s;
+}
 
 
 /* 
