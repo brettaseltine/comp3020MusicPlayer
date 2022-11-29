@@ -2,16 +2,20 @@
   font-family: Tahoma;
 }
 
+header {
+  display: flex;
+  justify-content: space-around;
+}
 
 #imusic-heading {
   /* margin:25% 0px; */
-  font-size: 180px;
+  font-size: 13vw;
   text-align: center;
 }
 
 #imusic-heading:hover {
   color: red;
-  transform: scale(1.25);
+  transform: scale(1.15);
   transition: all 0.8s ease-in-out 0s;
 }
 
