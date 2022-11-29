@@ -76,7 +76,7 @@
   background-color: transparent;
   /*Change Size of Cards here*/
   width: 38rem;
-  height: 28rem;
+  height: 32rem;
   /*Change Size of Cards here*/
 }
 
@@ -520,11 +520,11 @@ p:hover {
 
 .sponsor-inner-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .sponsors {
-  padding: 15px;
+  padding: 10px;
   margin: 0;
 }
 
