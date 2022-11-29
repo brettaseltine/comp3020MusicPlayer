@@ -482,7 +482,7 @@ img:hover {
 }
 
 p:hover {
-  transform: scale(1.25);
+  transform: scale(1.35);
   transition: all 0.5s ease 0s;
 }
 
