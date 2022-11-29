@@ -394,7 +394,8 @@ h3 {
   text-align: center;
 }
 
-.trending-heading {
+.trending-heading,
+.genre-heading {
   background-color: red;
   color: white;
   font-size: 3em;
@@ -468,4 +469,18 @@ h3 {
 img:hover {
   transform: scale(1.25);
   transition: all 0.5s ease 0s;
+}
+
+.genre {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.genre-container {}
+
+.genre-row {
+  display: flex;
+  justify-content: center;
 }

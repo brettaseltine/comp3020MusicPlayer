@@ -7,7 +7,31 @@
     <script src="https://kit.fontawesome.com/13a98fad65.js" crossorigin="anonymous"></script>
     <link href="https://fonts.cdnfonts.com/css/chomsky" rel="stylesheet">
 
-    <script src="../js/homepage.js">  setInterval(toggleRight, 500);
+    <script src="../js/homepage.js"></script>
+
+    <script>
+        setInterval(toggleRight, 2000);
+
+        function toggleRight() {
+            const cardArray = document.querySelectorAll(".card");
+            cardArray[4].className = "card move-out-from-right";
+            setTimeout(function () {
+                const numCards = cardArray.length;
+                if (numCards > 4) {
+                    cardArray[4].className = "card card--hide";
+                }
+                const tempCard_Node = cardArray[numCards - 1];
+                tempCard_Node.classList.remove("card--hide");
+                cardArray[numCards - 1].remove();
+                let cardList_Obj = document.querySelector(".card-list");
+                cardList_Obj.insertBefore(tempCard_Node, cardList_Obj.firstChild);
+                tempCard_Node.className = "card move-to-position1-from-right";
+                cardArray[0].className = "card move-to-position2-from-right";
+                cardArray[1].className = "card move-to-position3-from-right";
+                cardArray[2].className = "card move-to-position4-from-right";
+                cardArray[3].className = "card move-to-position5-from-right";
+            }, 500);
+        }
     </script>
 
     <title>iMusic</title>
@@ -109,6 +133,110 @@
                     <div class="top-song">Lemonade</div>
                     <div class="top-artist">Internet Money</div>
                     <div class="top-icon"><a href=""><i class="fa-solid fa-circle-play"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="genre">
+        <div class="genre-heading">Genres</div>
+        <div class="genre-container">
+            <div class="genre-row">
+
+                <div class="song-img-title"><a href="">
+                        <div class="song-img">
+                            <img src="../Images/genres/1.jpg">
+                        </div>
+                        <div class="song-title">
+                            <p>Pop</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song-img-title"><a href="">
+                        <div class="song-img">
+                            <img src="../Images/genres/3.jpg">
+                        </div>
+                        <div class="song-title">
+                            <p>Hip Hop</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song-img-title"><a href="">
+                        <div class="song-img">
+                            <img src="../Images/genres/10.jpg">
+                        </div>
+                        <div class="song-title">
+                            <p>Blues</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song-img-title"><a href="">
+                        <div class="song-img">
+                            <img src="../Images/albumcovers/ts.jpg">
+                        </div>
+                        <div class="song-title">
+                            <p>Rodeo</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song-img-title"><a href="">
+                        <div class="song-img">
+                            <img src="../Images/genres/4.jpg">
+                        </div>
+                        <div class="song-title">
+                            <p>Rhythm & Blues</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="genre-row">
+                <div class="song-img-title"><a href="">
+                        <div class="song-img">
+                            <img src="../Images/genres/5.jpg">
+                        </div>
+                        <div class="song-title">
+                            <p>Jazz</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song-img-title"><a href="">
+                        <div class="song-img">
+                            <img src="../Images/genres/6.jpg">
+                        </div>
+                        <div class="song-title">
+                            <p>Country</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song-img-title"><a href="">
+                        <div class="song-img">
+                            <img src="../Images/genres/7.jpg">
+                        </div>
+                        <div class="song-title">
+                            <p>EDM</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song-img-title"><a href="">
+                        <div class="song-img">
+                            <img src="../Images/genres/8.jpg">
+                        </div>
+                        <div class="song-title">
+                            <p>Classical</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="song-img-title"><a href="">
+                        <div class="song-img">
+                            <img src="../Images/genres/9.jpg">
+                        </div>
+                        <div class="song-title">
+                            <p>Rock</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
