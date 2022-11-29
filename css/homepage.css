@@ -7,9 +7,14 @@ header {
   justify-content: space-around;
 }
 
+.header-container {
+  padding-top: 120px;
+  padding-bottom: 200px;
+}
+
 #imusic-heading {
   /* margin:25% 0px; */
-  font-size: 13vw;
+  font-size: 8vw;
   text-align: center;
 }
 
