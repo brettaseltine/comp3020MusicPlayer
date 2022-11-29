@@ -16,15 +16,17 @@
   
   .smallPlayer .expandbtn {
     position: absolute;
-    top: 0;
+    text-align: center;
     right: 1px;
     font-size: 20px;
     padding: 10px;
-    height:100%;
+    height:120%;
     color: black; 
     background-color: transparent;
-    text-decoration: none;
     display: block;
+    transform: translateY(-4px);
+    user-select: none; 
+   -webkit-user-select: none;
   }
   .smallPlayer .expandbtn:hover {
     background-color: gold;
@@ -51,17 +53,15 @@
     display: none;
   }
   .controls {
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 150px;
-    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
   }
   #playbtn, #pausebtn {
     position: absolute;
     font-size: 200%;
     color: red;
+    transform: translateY(10%);
   }
   #pausebtn {
     display: none;
@@ -70,13 +70,13 @@
     position: absolute;
     font-size: 200%;
     color: red;
-    transform: translateX(40px);
+    transform: translate(40px, 10%);
   }
   #prevbtn{
     position: absolute;
     font-size: 200%;
     color: red;
-    transform: translateX(-50px);
+    transform: translate(-50px, 10%);
   }
   #nextbtn:hover, #prevbtn:hover, #playbtn:hover, #pausebtn:hover{
     opacity: 0.75;
@@ -86,8 +86,7 @@
   }
   #songTitle, #songArtist {
     position: absolute;
-    left: 10%;
-    transform: translateX(40px);
+    left: 90px;
   }
   #songTitle {
     top: 1%;
@@ -97,9 +96,47 @@
   }
   .smallPlayer img {
     position: absolute;
-    left:3%;
+    left:20px;
     margin-top: auto;
     margin-bottom: auto;
     width: 60px;
     height: 60px;
+    top:1px;
+  }
+  /* Volume Slider */
+  .volumeContainer {
+    position: absolute;
+    scale: 1.5;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 120px;
+    /* Disable text selection highlighting */
+    user-select: none; 
+   -webkit-user-select: none;
+  }
+  .volumeContainer i{
+    transform: translateY(70%);
+    color: red;
+  }
+  .volumeContainer i:hover{
+    opacity: 0.5;
+  }
+  .volumeContainer i:active{
+    opacity: 1;
+  }
+  .volumeSlider{
+    height: 5px;
+    transform: translateY(160%);
+    -webkit-appearance: none;
+    background-color: #FFA0A0;
+    border-radius: 20px;
+  }
+  .volumeSlider::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
   }
