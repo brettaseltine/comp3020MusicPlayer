@@ -1,298 +1,37 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/homepage.css">
+        <script src="https://kit.fontawesome.com/13a98fad65.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.cdnfonts.com/css/chomsky" rel="stylesheet">
+                
+        <script src="../js/script.js"></script>
 
-<head>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/homepage.css">
-    <script src="https://kit.fontawesome.com/13a98fad65.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.cdnfonts.com/css/chomsky" rel="stylesheet">
+        <title>iMusic</title>
 
-    <script src="../js/homepage.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
 
-    <title>iMusic</title>
-
-    <!-- <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> -->
-</head>
-
-<body>
-
-    <header id="imusic-heading">
-        <h1>iMusic</h1>
-    </header>
-
-    <header class="card-container-heading">New Music</header>
-    <div class="container">
-        <div class="button left-button" onclick="toggleLeft()">
-            < </div>
-                <div class="card-container">
-                    <ul class="card-list">
-                        <li class="card"><img src="../Images/albumcovers/1.jpg"></li>
-                        <li class="card"><img src="../Images/albumcovers/2.jpg"></li>
-                        <li class="card"><img src="../Images/albumcovers/3.jpg"></li>
-                        <li class="card"><img src="../Images/albumcovers/4.jpg"></li>
-                        <li class="card"><img src="../Images/albumcovers/5.jpg"></li>
-                        <li class="card card--hide"><img src="../Images/albumcovers/6.jpg"></li>
-                        <li class="card card--hide"><img src="../Images/albumcovers/7.jpg"></li>
-                    </ul>
-                </div>
-                <div class="button right-button" onclick="toggleRight()"> > </div>
-        </div>
-        <!---->
-        <div class="top-10-container">
-
-            <div class="top-10">
-                <div class="top-row-head">
-                    <div class="top-top">Top 10 BillBoard</div>
-                    <p> </p>
-                </div>
-                <div class="top-row-head">
-                    <div class="top-num">#</div>
-                    <div class="top-song">Song</div>
-                    <div class="top-artist">Artist</div>
-                    <p> </p>
-                </div>
-                <div class="top-row">
-                    <div class="top-num">#1</div>
-                    <div class="top-song">Mood</div>
-                    <div class="top-artist">24kGoldn ft.iann dior</div>
-                    <div class="top-icon"><a href=""><i class="fa-solid fa-circle-play"></i></a></div>
-                </div>
-                <div class="top-row">
-                    <div class="top-num">#2</div>
-                    <div class="top-song">WAP</div>
-                    <div class="top-artist">Cardi B</div>
-                    <div class="top-icon"><a href=""><i class="fa-solid fa-circle-play"></i></a></div>
-                </div>
-                <div class="top-row">
-                    <div class="top-num">#3</div>
-                    <div class="top-song">Laugh Now Cry Later</div>
-                    <div class="top-artist">Drake</div>
-                    <div class="top-icon"><a href=""><i class="fa-solid fa-circle-play"></i></a></div>
-                </div>
-                <div class="top-row">
-                    <div class="top-num">#4</div>
-                    <div class="top-song">Blinding Lights</div>
-                    <div class="top-artist">The Weekend</div>
-                    <div class="top-icon"><a href=""><i class="fa-solid fa-circle-play"></i></a></div>
-                </div>
-                <div class="top-row">
-                    <div class="top-num">#5</div>
-                    <div class="top-song">Dynamite</div>
-                    <div class="top-artist">BTS</div>
-                    <div class="top-icon"><a href=""><i class="fa-solid fa-circle-play"></i></a></div>
-                </div>
-                <div class="top-row">
-                    <div class="top-num">#6</div>
-                    <div class="top-song">Savage Love</div>
-                    <div class="top-artist">Jawsh 685</div>
-                    <div class="top-icon"><a href=""><i class="fa-solid fa-circle-play"></i></a></div>
-                </div>
-                <div class="top-row">
-                    <div class="top-num">#7</div>
-                    <div class="top-song">Rockstar</div>
-                    <div class="top-artist">DaBaby</div>
-                    <div class="top-icon"><a href=""><i class="fa-solid fa-circle-play"></i></a></div>
-                </div>
-                <div class="top-row">
-                    <div class="top-num">#8</div>
-                    <div class="top-song">I Hope</div>
-                    <div class="top-artist">Gabby Barrett</div>
-                    <div class="top-icon"><a href=""><i class="fa-solid fa-circle-play"></i></a></div>
-                </div>
-                <div class="top-row">
-                    <div class="top-num">#9</div>
-                    <div class="top-song">Watermelon Sugar</div>
-                    <div class="top-artist">harry Styles</div>
-                    <div class="top-icon"><a href=""><i class="fa-solid fa-circle-play"></i></a></div>
-                </div>
-                <div class="top-row">
-                    <div class="top-num">#10</div>
-                    <div class="top-song">Lemonade</div>
-                    <div class="top-artist">Internet Money</div>
-                    <div class="top-icon"><a href=""><i class="fa-solid fa-circle-play"></i></a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!---->
-    <div class="trending">
-
-        <div class="trending-albums">
-
-            <div class="trending-heading">Trending Albums</div>
-            <div class="row">
-                <div class="song-img-title"><a href="">
-                        <div class="song-img">
-                            <img src="../Images/albumcovers/jik.jpg">
-                        </div>
-                        <div class="song-title">
-                            <p>Jesus is King</p>
-                        </div>
-                    </a></div>
-                <div class="song-img-title"><a href="">
-                        <div class="song-img">
-                            <img src="../Images/albumcovers/md.jpg">
-                        </div>
-                        <div class="song-title">
-                            <p>True Blue</p>
-                        </div>
-                    </a></div>
-                <div class="song-img-title"><a href="">
-                        <div class="song-img">
-                            <img src="../Images/albumcovers/igor.jpeg">
-                        </div>
-                        <div class="song-title">
-                            <p>IGOR</p>
-                        </div>
-                    </a></div>
-            </div>
-            <div class="row">
-                <div class="song-img-title"><a href="">
-                        <div class="song-img">
-                            <img src="../Images/albumcovers/ts.jpg">
-                        </div>
-                        <div class="song-title">
-                            <p>Rodeo</p>
-                        </div>
-                    </a></div>
-                <div class="song-img-title"><a href="">
-                        <div class="song-img">
-                            <img src="../Images/albumcovers/6.jpg">
-                        </div>
-                        <div class="song-title">
-                            <p>My War</p>
-                        </div>
-                    </a></div>
-                <div class="song-img-title"><a href="">
-                        <div class="song-img">
-                            <img src="../Images/albumcovers/7.jpg">
-                        </div>
-                        <div class="song-title">
-                            <p>Heaven or Las Vegas</p>
-                        </div>
-                    </a></div>
-            </div>
-        </div>
-        <!---->
-        <div class="trending-artits">
-            <div class="trending-heading">Trending Artists</div>
-            <div class="row">
-                <div class="song-img-title"><a href="">
-                        <div class="song-img">
-                            <img src="../Images/artists/bt.jpg">
-                        </div>
-                        <div class="song-title">
-                            <p>The Beatles</p>
-                        </div>
-                    </a></div>
-                <div class="song-img-title"><a href="">
-                        <div class="song-img">
-                            <img src="../Images/artists/lg.jpg">
-                        </div>
-                        <div class="song-title">
-                            <p>Lady Gaga</p>
-                        </div>
-                    </a></div>
-                <div class="song-img-title"><a href="">
-                        <div class="song-img">
-                            <img src="../Images/artists/mj.jpg">
-                        </div>
-                        <div class="song-title">
-                            <p>Michael Jackson</p>
-                        </div>
-                    </a></div>
-            </div>
-            <div class="row">
-                <div class="song-img-title"><a href="">
-                        <div class="song-img">
-                            <img src="../Images/artists/Ye.jpg">
-                        </div>
-                        <div class="song-title">
-                            <p>Kanye West</p>
-                        </div>
-                    </a></div>
-                <div class="song-img-title"><a href="">
-                        <div class="song-img">
-                            <img src="../Images/albumcovers/10.jpg">
-                        </div>
-                        <div class="song-title">
-                            <p>Rush</p>
-                        </div>
-                    </a></div>
-                <div class="song-img-title"><a href="">
-                        <div class="song-img">
-                            <img src="../Images/albumcovers/9.jpg">
-                        </div>
-                        <div class="song-title">
-                            <p>Madame</p>
-                        </div>
-                    </a></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="lyric-big-container">
-        <header class="lyric-heading">Trending Lyrics</header>
-        <div class="lyric-container">
-            <div class="lyric-container-container">
-                <div class="lyrics">Wake up (Wake up, wake up, woah)<br>
-                    It's the first of the month (Slatt, slatt, slatt, slatt)</div>
-                <p></p>
-                <div class="lyrics">Shout it loud so they all know how you feel exactly</div>
-                <p></p>
-                <div class="lyrics">Forgiattos on a Brinks truck<br>
-                    My favorite rapper drove a pink truck</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="cprt-container">
-        <div class="cprt">Copyright © 2022, iMusic. All Rights Reserved.</div>
-    </div>
-
-</body>
-
-</html>
+    <body>
+    
+       
 
 
 
-<!-- ARTISTS -->
-<!-- <h1 class="headings"> Trending Artists</h1>
-        <div class="row">
-            <div class="column">
-
-
-            </div>
-            <div class="column">
-
-
-            </div>
-            <div class="column">
-
-
-            </div>
-        </div> -->
-
-
-
-
-
-
-
-<!-- <div id="contain-page">
+<div id="contain-page">
     <h1 id="imusic-heading">iMusic</h1>
     <br>
 
-    <h1 class="headings">For You</h1>
     <div id="demo" data-interval="2000" class="carousel slide" data-ride="carousel">
 
         <!-- Indicators -->
-<!-- <ul class="carousel-indicators">
+         <ul class="carousel-indicators">
         <li data-target="#demo" data-slide-to="0" class="active"></li>
         <li data-target="#demo" data-slide-to="1"></li>
         <li data-target="#demo" data-slide-to="2"></li>
@@ -324,9 +63,9 @@
         <li data-target="#demo" data-slide-to="28"></li>
         <li data-target="#demo" data-slide-to="29"></li> 
         </ul> 
-         -->
-<!-- The slideshow -->
-<!-- <div class="carousel-inner">
+        
+        <!-- The slideshow -->
+    <div class="carousel-inner">
         <div class="carousel-item active"><img src="../Images/albumcovers/11.jpg" ></div>
         <div class="carousel-item"><img src="../Images/albumcovers/20.jpg" ></div>
         <div class="carousel-item"><img src="../Images/albumcovers/30.jpg"></div>
@@ -357,10 +96,10 @@
         <div class="carousel-item"><img src="../Images/albumcovers/78.jpg" ></div>
         <div class="carousel-item"><img src="../Images/albumcovers/88.jpg" ></div>
         <div class="carousel-item"><img src="../Images/albumcovers/98.jpg" ></div>
-        </div> -->
+        </div>
 
-<!-- Left and right controls -->
-<!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
         <span  class="carousel-control-prev-icon"></span>
         </a>
         <a class="carousel-control-next" href="#demo" data-slide="next">
@@ -373,9 +112,9 @@
     <br><br><br>
     <h1 class="headings">Genres</h1>
  
-     -->
-<!-- Photo Grid -->
-<!-- <div class="row"> 
+    
+    <!-- Photo Grid -->
+    <div class="row"> 
         <div class="column">
             <img src="../Images/genres/1.jpg" >
             <p>Pop</p>
@@ -409,10 +148,10 @@
     <img class="decoration-pics" style="width:60%; border: 4px solid black" src="../Images/bb100.jpeg" >
 
 
-        <br><br>  -->
+        <br><br> 
 
-<!-- ALBUMS -->
-<!-- <h1 id="alb" class="headings">Trending Albums</h1>
+        <!-- ALBUMS -->
+        <h1 id="alb" class="headings">Trending Albums</h1>
         <br><br>
         <div class="row"> 
             <div class="column"> 
@@ -435,9 +174,9 @@
             </div>
         </div>
         <br><br><br>
- -->
-<!-- ARTISTS -->
-<!-- <h1 class="headings"> Trending Artists</h1>
+
+        <!-- ARTISTS -->
+        <h1 class="headings"> Trending Artists</h1>
         <br><br>
         <div class="row"> 
             <div class="column"> 
@@ -459,11 +198,11 @@
                 <p>Madame</p>
             </div>
         </div>
-        <br><br><br> -->
+        <br><br><br>
 
-<!-- LYRICS -->
+        <!-- LYRICS -->
 
-<!-- <h1 class="headings">Trending Lyrics</h1>
+        <h1 class="headings">Trending Lyrics</h1>
         <h3 class="lyrics">"Wake up (Wake up, wake up, woah)<br>
             It's the first of the month (Slatt, slatt, slatt, slatt)"</h3>
 
@@ -472,10 +211,10 @@
         <h3 class="lyrics">"Forgiattos on a Brinks truck<br>
             My favorite rapper drove a pink truck"</h3>
         
-        <hr style="border: 2px solid black; margin-top: 400px;"/> -->
+        <hr style="border: 2px solid black; margin-top: 400px;"/>
 
-<!-- SPONSORS -->
-<!-- <h1 class="headings" style="margin-top:0; font-family: 'Arial'; font-weight: 400;">Sponsors</h1>
+        <!-- SPONSORS -->
+        <h1 class="headings" style="margin-top:0; font-family: 'Arial'; font-weight: 400;">Sponsors</h1>
         <hr style="border: 2px solid black; margin-top: 30px;"/>
 
         <br><br>
@@ -490,4 +229,6 @@
         <br><br>
 
 
-</div> -->
+</div>
+</body>
+</html>
