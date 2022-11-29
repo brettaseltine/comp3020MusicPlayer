@@ -445,7 +445,7 @@ h3 {
 
 
 .lyric-big-container {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .lyric-container {
@@ -492,10 +492,10 @@ p:hover {
 }
 
 .genre {
-  padding-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding-bottom: 100px;
 }
 
 .genre-container {}
@@ -506,16 +506,13 @@ p:hover {
 }
 
 
-.cprt-container {
-  text-align: center;
-  font-weight: bold;
-}
 
 
 .sponsor-container {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  padding-bottom: 5px;
 }
 
 .sponsor-inner-container {
@@ -537,4 +534,9 @@ p:hover {
 .beats {
   width: 100px;
   height: 100px;
+}
+
+.cprt-container {
+  text-align: center;
+  font-weight: bold;
 }
