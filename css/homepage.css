@@ -424,6 +424,10 @@ h3 {
   padding-top: 100px;
 }
 
+.trending-gap {
+  color: transparent;
+}
+
 .row {
   width: 50rem;
   display: flex;
