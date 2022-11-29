@@ -422,7 +422,11 @@ h3 {
 
 .song-title {
   text-align: center;
+  color: red;
+  font-weight: bolder;
+  font-size: x-large;
 }
+
 
 
 .lyric-big-container {
