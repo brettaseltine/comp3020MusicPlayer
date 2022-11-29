@@ -5,7 +5,6 @@ function showResults(){
 }
 
 function initializeHandlers(){
-    
     songs = document.getElementById("song_row").children;
     for(let i = 0; i < songs.length; i++){
         songs[i].setAttribute('onClick', "parent.nextTrack()");
