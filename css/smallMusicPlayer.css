@@ -106,16 +106,15 @@
   /* Volume Slider */
   .volumeContainer {
     position: absolute;
-    scale: 1.5;
     margin-top: auto;
     margin-bottom: auto;
-    right: 120px;
+    right: 70px;
     /* Disable text selection highlighting */
     user-select: none; 
    -webkit-user-select: none;
   }
   .volumeContainer i{
-    transform: translateY(70%);
+    transform: translateY(110%);
     color: red;
   }
   .volumeContainer i:hover{
@@ -125,8 +124,9 @@
     opacity: 1;
   }
   .volumeSlider{
+    width: 70px;
     height: 5px;
-    transform: translateY(160%);
+    transform: translateY(260%);
     -webkit-appearance: none;
     background-color: #FFA0A0;
     border-radius: 20px;
