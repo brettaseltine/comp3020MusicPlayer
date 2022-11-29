@@ -12,7 +12,6 @@
     border: 3px solid black;
     overflow-x: hidden;
     overflow-y: hidden;
-    min-width: 500px
   }
   
   .smallPlayer .expandbtn {
@@ -26,6 +25,8 @@
     background-color: transparent;
     display: block;
     transform: translateY(-4px);
+    user-select: none; 
+   -webkit-user-select: none;
   }
   .smallPlayer .expandbtn:hover {
     background-color: gold;
@@ -52,12 +53,9 @@
     display: none;
   }
   .controls {
-    align-self: center;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
   }
   #playbtn, #pausebtn {
     position: absolute;
@@ -115,12 +113,8 @@
     /* Disable text selection highlighting */
     user-select: none; 
    -webkit-user-select: none;
-   -khtml-user-select: none;
-   -moz-user-select: none; 
-   -ms-user-select: none;
   }
   .volumeContainer i{
-    position: relative; 
     transform: translateY(70%);
     color: red;
   }
@@ -132,7 +126,6 @@
   }
   .volumeSlider{
     height: 5px;
-    position: relative;
     transform: translateY(160%);
     -webkit-appearance: none;
     background-color: #FFA0A0;
@@ -146,5 +139,4 @@
     border-radius: 50%;
     background: red;
     cursor: pointer;
-    box-shadow:  grey;
   }
