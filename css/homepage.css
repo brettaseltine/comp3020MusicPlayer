@@ -20,7 +20,7 @@ header {
 
 #imusic-heading:hover {
   color: red;
-  transform: scale(1.15);
+  transform: scale(1.25);
   transition: all 0.8s ease-in-out 0s;
 }
 
