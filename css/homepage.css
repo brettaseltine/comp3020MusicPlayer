@@ -455,6 +455,7 @@ h3 {
 
 .lyric-big-container {
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .lyric-container {
@@ -472,7 +473,7 @@ h3 {
 
 .lyric-container-container {
   width: 85rem;
-  height: 40rem;
+  height: 20rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -481,7 +482,7 @@ h3 {
 .lyrics {
   font-family: Trattatello, fantasy;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2.3vw;
   padding: 40px;
 }
 
